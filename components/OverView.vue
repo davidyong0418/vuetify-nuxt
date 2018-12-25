@@ -24,8 +24,8 @@
           class="font12 flex-column pl-3">
           Timeline
           <v-icon
-            medium
-            class="mb-3">view_stream</v-icon>
+            small
+            class="mb-1">fa-bars</v-icon>
         </v-tab>
 
         <v-tab
@@ -34,8 +34,8 @@
           class="font12 flex-column pl-3">
           Pending
           <v-icon
-            medium
-            class="mb-3">payment</v-icon>
+            small
+            class="mb-1">fa-desktop</v-icon>
         </v-tab>
 
         <v-tab
@@ -43,8 +43,8 @@
           class="font12 flex-column pl-3">
           Goal
           <v-icon
-            medium
-            class="mb-3">flag</v-icon>
+            small
+            class="mb-1">fa-flag</v-icon>
         </v-tab>
 
         <v-tab
@@ -52,8 +52,8 @@
           class="font12 flex-column pl-3">
           Request
           <v-icon
-            medium
-            class="mb-3">send</v-icon>
+            small
+            class="mb-1">fa-location-arrow</v-icon>
         </v-tab>
 
         <v-tab
@@ -61,10 +61,14 @@
           class="font12 flex-column pl-3">
           Edit
           <v-icon
-            medium
-            class="mb-3">edit</v-icon>
+            small
+            class="mb-1">edit</v-icon>
         </v-tab>
       </v-tabs>
+      <v-spacer />
+      <v-btn
+        dark
+        icon><v-icon>more_vert</v-icon></v-btn>
     </v-toolbar>
     <v-tabs-items v-model="tab">
       <v-tab-item
@@ -168,7 +172,7 @@ import ViewTimeline from './timeline/ViewTimeline'
 import Pending from './pending/Pending'
 import Goal from './goal/Goal'
 import Request from './request/Request'
-import Edit from './edit/edit'
+import Edit from './edit/Edit'
 export default {
   components: {
     ViewTimeline,

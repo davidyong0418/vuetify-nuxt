@@ -12,9 +12,9 @@
       <div class="schedule-highlight pl-5 pr-5 pb-4">
         <div class="pl-5 pr-5 schedule-highlight-child">
           <v-divider />
-          <v-iconicon
+          <v-icon
             class="font16 ml-2"
-            color="red">calendar_today</v-iconicon>
+            color="red">calendar_today</v-icon>
           <span class="font16 margin-auto mr-2">Highlight</span>
           <v-divider />
         </div>

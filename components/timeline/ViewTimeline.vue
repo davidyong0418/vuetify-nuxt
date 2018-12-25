@@ -27,30 +27,7 @@
     </v-list>
     <div
       v-if="post==false">
-      <v-menu
-        class="ml-5"
-        bottom>
-        <v-btn
-          slot="activator"
-          icon>
-          View by {{ sort }}
-          <v-icon style="font-size: 18px;">arrow_drop_down</v-icon>
-        </v-btn>
-        <v-list>
-          <v-list-tile>
-            <v-list-tile-action @click="sort='test1'">Teste1</v-list-tile-action>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action @click="sort='test2'">Teste2</v-list-tile-action>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action @click="sort='test3'">Teste3</v-list-tile-action>
-          </v-list-tile>
-          <v-list-tile>
-            <v-list-tile-action @click="sort='test4'">Teste4</v-list-tile-action>
-          </v-list-tile>
-        </v-list>
-      </v-menu>
+      <view-sort />
     </div>
     <v-card v-if="post==false">
       <v-flex>
@@ -223,12 +200,13 @@
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
+import ViewSort from '../widget/ViewSort'
 export default {
   components: {
-    Dropzone
+    Dropzone,
+    ViewSort
   },
   data: vm => ({
-    sort: 'home',
     tab: null,
     items: ['web', 'shopping', 'videos', 'images', 'news'],
     post: false,

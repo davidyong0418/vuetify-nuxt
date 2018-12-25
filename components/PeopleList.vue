@@ -6,27 +6,76 @@
 
       <v-toolbar-title class="font14">Sort by <span style="color: cornflowerblue">{{ sort }}</span></v-toolbar-title>
       <v-menu
-        bottom>
+        bottom
+        left
+      >
         <v-btn
           slot="activator"
           icon>
           <v-icon style="font-size: 18px;">arrow_drop_down</v-icon>
         </v-btn>
-        <v-list>
+        <v-list class="view-sort-menu">
           <v-list-tile>
-            <v-list-tile-action @click="sort='test1'">Teste1</v-list-tile-action>
+            <v-list-tile-action @click="sort='test1'">Date</v-list-tile-action>
           </v-list-tile>
           <v-list-tile>
-            <v-list-tile-action @click="sort='test2'">Teste2</v-list-tile-action>
+            <v-list-tile-action @click="sort='test2'">Highlights</v-list-tile-action>
           </v-list-tile>
           <v-list-tile>
-            <v-list-tile-action @click="sort='test3'">Teste3</v-list-tile-action>
+            <v-list-tile-action @click="sort='test3'">Goals</v-list-tile-action>
+          </v-list-tile>
+          <v-divider />
+
+          <v-list-tile>
+            <v-list-tile-content class="subheader">Category</v-list-tile-content>
+          </v-list-tile>
+
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test4'">Arts</v-list-tile-action>
           </v-list-tile>
           <v-list-tile>
-            <v-list-tile-action @click="sort='test4'">Teste4</v-list-tile-action>
+            <v-list-tile-action @click="sort='test1'">Awards</v-list-tile-action>
           </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test2'">Birthdays</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test3'">Familly</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test4'">Field Trips</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test1'">Food</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test2'">Games</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test3'">Movies</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test4'">Music</v-list-tile-action>
+          </v-list-tile>
+
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test3'">School</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test4'">Special Events</v-list-tile-action>
+          </v-list-tile>
+          <v-list-tile>
+            <v-list-tile-action @click="sort='test1'">Sports</v-list-tile-action>
+          </v-list-tile>
+          <v-divider />
+
+          <v-list-tile>
+            <v-list-tile-content class="subheader">Metadata</v-list-tile-content>
+          </v-list-tile>
+
         </v-list>
       </v-menu>
+
     </v-toolbar>
 
     <v-list>

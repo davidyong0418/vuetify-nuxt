@@ -187,7 +187,7 @@
 <script>
 import Dropzone from 'nuxt-dropzone'
 import 'nuxt-dropzone/dropzone.css'
-import ScheduleWidget from '../widget/schedule.vue'
+import ScheduleWidget from '../widget/Schedule'
 export default {
   components: {
     Dropzone,

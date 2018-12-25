@@ -131,6 +131,9 @@ html {
 .v-avatar img {
   border-radius: 5px;
 }
+* {
+  text-transform: none !important;
+}
 </style>
 <script>
 import PeopleList from '../components/PeopleList'
